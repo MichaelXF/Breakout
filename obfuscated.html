@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Breakout</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resources/css/base.css" />
+    <link rel="stylesheet" href="resources/css/main.css" />
+    <link rel="stylesheet" href="resources/css/game.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/4.1.2/cash.min.js"></script>
+    <script src="resources/js/game.obfuscated.js"></script>
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <div class="game-ui-container">
+        <div class="game-ui-footer">
+          <a
+            class="link"
+            href="https://github.com/MichaelXF/Breakout"
+            target="_blank"
+            >GitHub Source</a
+          >
+          <a class="link" href="https://michaelxf.com" target="_blank"
+            >Portfolio Website</a
+          >
+
+          <div class="game-ui-footer-right">
+            <a
+              class="link"
+              href="https://npmjs.com/package/js-confuser"
+              target="_blank"
+              >Protected with JsConfuser</a
+            >
+          </div>
+        </div>
+
+        <div class="game-ui-screens" id="game-ui-screens">
+          <div
+            class="game-ui-screen game-ui-screen-menu"
+            id="game-ui-screen-menu"
+          >
+            <div class="game-ui-screen-menu-banner">
+              <p>An open-source canvas game created by MichaelXF</p>
+              <img src="resources/images/banner.png" alt="" />
+            </div>
+
+            <div class="game-ui-screen-menu-options">
+              <a onclick="play()">Play</a>
+              <a
+                onclick="alert('Atari Breakout is a classic and fun arcade game. Break every block to continue to the next level! Use the arrow keys to move.')"
+                >About</a
+              >
+              <a href="/">Exit</a>
+            </div>
+          </div>
+
+          <div class="game-ui-screen" id="game-ui-screen-play">
+            <div class="game-ui-level">
+              <p id="game-ui-level-number">Level #1</p>
+              <div class="game-ui-level-bar" id="game-ui-level-bar"></div>
+            </div>
+
+            <div class="game-ui-title" id="game-ui-title">
+              <h1>text</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-ui-canvas-container">
+        <canvas id="game-ui-canvas" class="fade fade-out"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
